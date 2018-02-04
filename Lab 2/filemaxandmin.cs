@@ -4,30 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-namespace ConsoleApp5
+
+namespace Hello
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(Console.ReadLine());
-            string[] a = text.Split(new Char[] { ' ', '\n' });
-            long max = -1100000000;
-            long min = 1100000000;
+
+            string s = Console.ReadLine();
+            StreamReader sr = new StreamReader(s);
+            string h = sr.ReadToEnd();
+            string[] a = h.Split(new Char[] { ' ', '\n' });
+          
+            
+            int min = 1000000;
+            int max = 0;
             for (int i = 0; i < a.Length; i++)
             {
-
-                if (int.Parse(a[i]) > max)
+                bool t = true;
+                int test = int.Parse(a[i]);
+                for (int j = 2; j * j <= test; j++)
                 {
-                    max = int.Parse(a[i]);
+                    if (test % j == 0)
+                    {
+                        t = false;
+                        break;
+                    }
                 }
-                if (int.Parse(a[i]) < min)
+                if (t && test != 1 && test > 0)
                 {
-                    min = int.Parse(a[i]);
+                    min = Math.Min(min, test);
+                    max = Math.Max(max, test);
                 }
             }
-            
-            Console.WriteLine(max + " " + min);
+            StreamWriter wr = new StreamWriter(@"C:\Users\админ\Desktop\1.txt");
+            wr.WriteLine(max);
+            wr.WriteLine(min);
+            sr.Close();
+            wr.Close();
             Console.ReadKey();
         }
     }
