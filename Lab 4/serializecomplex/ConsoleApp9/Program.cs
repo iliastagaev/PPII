@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace ConsoleApp5
 {
 
-   public class Complex
+    public class Complex
     {
         public int z, l;
         public Complex() { }
@@ -89,7 +89,7 @@ namespace ConsoleApp5
             {
                 return Convert.ToString(z) + '/' + Convert.ToString(l) + '\n';
             }
-            
+
             else
             {
                 return "-" + Convert.ToString(Math.Abs(z)) + '/' + Convert.ToString(Math.Abs(l)) + '\n';
@@ -104,9 +104,9 @@ namespace ConsoleApp5
 
         static void Main(string[] args)
         {
-
+            List<Complex> list = new List<Complex>();
             FileStream fs = new FileStream("a.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            XmlSerializer xs = new XmlSerializer(typeof(Complex));
+            XmlSerializer xs = new XmlSerializer(typeof(List<Complex>));
 
             string s = Console.ReadLine();
             string[] token = s.Split();
@@ -123,10 +123,15 @@ namespace ConsoleApp5
             Complex d = a * b;
             Complex e = a + b;
             Complex f = a - b;
+            list.Add(c);
+            list.Add(d);
+            list.Add(e);
+            list.Add(f);
+
             try
             {
-                xs.Serialize(fs, c);
-               
+                xs.Serialize(fs, list);
+
             }
             catch (Exception j)
             {
