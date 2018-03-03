@@ -1,0 +1,7 @@
+C:\Users\админ\Desktop\shop\shop\bin\Debug\shop.exe.config
+C:\Users\админ\Desktop\shop\shop\bin\Debug\shop.exe
+C:\Users\админ\Desktop\shop\shop\bin\Debug\shop.pdb
+C:\Users\админ\Desktop\shop\shop\obj\Debug\shop.csprojResolveAssemblyReference.cache
+C:\Users\админ\Desktop\shop\shop\obj\Debug\shop.csproj.CoreCompileInputs.cache
+C:\Users\админ\Desktop\shop\shop\obj\Debug\shop.exe
+C:\Users\админ\Desktop\shop\shop\obj\Debug\shop.pdb

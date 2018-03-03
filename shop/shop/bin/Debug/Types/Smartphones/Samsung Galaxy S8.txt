@@ -1,0 +1,5 @@
+Cost: 259990
+RAM: 4GB
+Network: 4G, Wi-FI
+OS: Android
+Memory: 64GB

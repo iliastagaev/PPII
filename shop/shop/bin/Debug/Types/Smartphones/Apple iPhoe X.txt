@@ -1,0 +1,5 @@
+Cost: 479990
+RAM: 3GB
+Network: 4G, Wi-FI
+OS: iOS-11
+Memory: 64GB

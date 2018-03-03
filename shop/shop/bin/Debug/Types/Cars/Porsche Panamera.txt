@@ -1,0 +1,3 @@
+Cost: 21500000
+Volume: 3.6V 
+Color: Blue

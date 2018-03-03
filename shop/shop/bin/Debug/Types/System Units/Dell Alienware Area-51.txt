@@ -1,0 +1,3 @@
+Cost: 1659390
+Memory: 16BG/2TB/256GB
+Video Card: GeForce GTX1080 8GB

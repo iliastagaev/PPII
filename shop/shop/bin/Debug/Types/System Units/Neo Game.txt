@@ -1,0 +1,5 @@
+Cost: 295990
+Frequency: 3.60GHz
+RAM: 8GB
+Memory: 1000GB
+Video Card: GeForce GTX1050Ti

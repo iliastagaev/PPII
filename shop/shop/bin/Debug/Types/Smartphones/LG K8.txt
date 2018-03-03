@@ -1,0 +1,6 @@
+Cost: 39990
+RAM: 1GB
+Network: 4G, Wi-FI
+OS: Android 6.0(Marshmallow)
+Memory: 16GB
+Dual Sim-Card

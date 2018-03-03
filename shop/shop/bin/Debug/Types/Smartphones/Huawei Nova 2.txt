@@ -1,0 +1,6 @@
+Cost: 159990
+RAM: 4BG
+Network: 4G, Wi-FI
+OS: Android 7.0 
+Memory: 64GB
+Camera: 12+8 MPx

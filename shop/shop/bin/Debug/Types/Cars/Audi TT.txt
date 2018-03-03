@@ -1,0 +1,3 @@
+Cost: 5500000
+Volume: 2V
+Color: WhiteMetallic
